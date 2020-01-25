@@ -1,43 +1,45 @@
-# BTRTF
-Matlab Code for Bayesian Tubal-Rank Tensor Factorization (BTRTF)
+# Bayesian Low-Tubal-Rank Robust Tensor Factorization with Multi-Rank Determination
+Matlab source codes for Bayesian Tubal-Rank Tensor Factorization (BTRTF)
 
+## Introduction
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                        Matlab source codes for                              %
-%        Bayesian Low-Tubal-Rank Robust Tensor Factorization (BTRTF)          %
-%                                                                             %
-% Author: 		Yang ZHOU                                                     %
-% Email: 		youngzhou12@gmail.com                                         %
-% Release date: June 22, 2019                                                 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+This is the PyTorch implementation of the [RotatE](https://openreview.net/forum?id=HkgEQnRqYQ) model for knowledge graph embedding (KGE). We provide a toolkit that gives state-of-the-art performance of several popular KGE models. The toolkit is quite efficient, which is able to train a large KGE model within a few hours on a single GPU.
 
 %[Algorithms]%
 The matlab codes provided here implement the BTRTF algorithm presented in the 
 following paper:
 
-    Yang Zhou, Yiu-ming Cheung. 
-    Bayesian Low-Tubal-Rank Robust Tensor Factorization with Multi-Rank Determination. 
-    IEEE Transactions on Pattern Analysis and Machine Intelligence, 
-    DOI:10.1109/TPAMI.2019.2923240, 2019.
----------------------------
+## Usage
+Image denoising with BTRTF on example images from the dataset:
+```
+Demo_BTRTF.m
+```
 
-%[Usages]%
-Please refer to the file "Demo_BTRTF.m", which provides example usage of 
-BTRTF for image denoising
----------------------------
+**Using the library**
+## Descriptions of the files in this repository 
 
-%[Descriptions of the files in this package]%
-1. Demo_BTRTF.m provides example usage of BTRTF for image denoising.
-2. BTRTF.m implements BTRTF with multi-rank determination described as Alg.1 in [1].
-3. myPSNR.m computes the PSNR value from the ground truth and the estimated low-rank component.
----------------------------
+ - Demo_BTRTF.m provides example usage of BTRTF for image denoising.
+ - BTRTF.m implements BTRTF with multi-rank determination described as Alg.1 in [1].
+ - myPSNR.m computes the PSNR value from the ground truth and the estimated low-rank component.
 
-%[Restriction]%
-In all documents and papers reporting research work that uses the matlab codes 
-provided here, the respective author(s) must reference the following paper: 
+The python libarary is organized around 3 objects:
 
-[1] Yang Zhou, Yiu-ming Cheung. 
-    Bayesian Low-Tubal-Rank Robust Tensor Factorization with Multi-Rank Determination. 
-    IEEE Transactions on Pattern Analysis and Machine Intelligence, 
-    DOI:10.1109/TPAMI.2019.2923240, 2019.
----------------------------
+ - TrainDataset (dataloader.py): prepare data stream for training
+ - TestDataSet (dataloader.py): prepare data stream for evluation
+ - KGEModel (model.py): calculate triple score and provide train/test API
+
+The run.py file contains the main function, which parses arguments, reads data, initilize the model and provides the training loop.
+
+## Citation
+
+If you find our codes helpful, please consider cite the following [paper](https://ieeexplore.ieee.org/abstract/document/8740980):
+```
+@article{
+    zhou2019bayes,
+    title={Bayesian Low-Tubal-Rank Robust Tensor Factorization with Multi-Rank Determination},
+    author={Yang Zhou and Yiu-ming Cheung},
+    journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+    year={2019},
+    doi={10.1109/TPAMI.2019.2923240},
+}
+```
