@@ -1,5 +1,5 @@
 # BTRTF
-Matlab source codes for the Bayesian Tubal-Rank Tensor Factorization (BTRTF) algorithm presented in the paper [Bayesian Low-Tubal-Rank Robust Tensor Factorization with Multi-Rank Determination](https://ieeexplore.ieee.org/abstract/document/8740980).
+Matlab source codes of the Bayesian Tubal-Rank Tensor Factorization (BTRTF) algorithm presented in the paper [Bayesian Low-Tubal-Rank Robust Tensor Factorization with Multi-Rank Determination](https://ieeexplore.ieee.org/abstract/document/8740980).
 
 ## Usage
 Image denoising with BTRTF on example images from the BSD500 dataset:
