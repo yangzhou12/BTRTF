@@ -9,7 +9,7 @@ Demo_BTRTF.m
 
 ## Descriptions of the files in this repository 
  - *Demo_BTRTF.m* provides example usage of BTRTF for image denoising.
- - *BTRTF.m* implements BTRTF with multi-rank determination described as Alg.1 in [paper](https://ieeexplore.ieee.org/abstract/document/8740980).
+ - *BTRTF.m* implements BTRTF with multi-rank determination described as Alg.1 in the [paper](https://ieeexplore.ieee.org/abstract/document/8740980).
  - *myPSNR.m* computes the PSNR value from the ground truth and the estimated low-rank component.
 
 ## Citation
