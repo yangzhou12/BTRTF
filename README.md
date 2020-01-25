@@ -16,7 +16,7 @@ Demo_BTRTF.m
 If you find our codes helpful, please consider cite the following [paper](https://ieeexplore.ieee.org/abstract/document/8740980):
 ```
 @article{
-    zhou2019bayes,
+    zhou2019BTRTF,
     title={Bayesian Low-Tubal-Rank Robust Tensor Factorization with Multi-Rank Determination},
     author={Yang Zhou and Yiu-ming Cheung},
     journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
